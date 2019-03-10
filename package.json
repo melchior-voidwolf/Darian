@@ -1,0 +1,22 @@
+{
+  "name": "darian",
+  "version": "0.0.1",
+  "description": "A Naive state container for JavaScript apps",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Casper-MAGI/Darian.git"
+  },
+  "keywords": [
+    "darian"
+  ],
+  "author": "voidwolf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Casper-MAGI/Darian/issues"
+  },
+  "homepage": "https://github.com/Casper-MAGI/Darian#readme"
+}
