@@ -3,7 +3,7 @@ interface actionT {
     data?: object;
 }
 
-type reducerT = (action?: actionT) => object;
+type reducerT = (action: actionT) => object;
 
 interface reduceTreeT {
     [propName: string]: reducerT;

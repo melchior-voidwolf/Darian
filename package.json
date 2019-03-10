@@ -4,7 +4,8 @@
   "description": "A Naive state container for JavaScript apps",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "tslint -c tslint.json 'src/*.ts' --fix",
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/Casper-MAGI/Darian/issues"
   },
-  "homepage": "https://github.com/Casper-MAGI/Darian#readme"
+  "homepage": "https://github.com/Casper-MAGI/Darian#readme",
+  "devDependencies": {
+    "rollup": "^1.6.0",
+    "rollup-plugin-typescript": "^1.0.0",
+    "tslib": "^1.9.3",
+    "tslint": "^5.13.1",
+    "typescript": "^3.3.3333"
+  }
 }
