@@ -7,12 +7,9 @@ class Store {
         this.reducer = reducer;
         this.state = this.reducer(action);
     }
-    public getState = () => {
-        return this.state;
-    }
-    public dispath = (action: actionT) => {
+    public dispatch = (action: actionT) => {
         this.state = this.reducer(action);
-        return this.getState();
+        return this.state;
     }
 }
 

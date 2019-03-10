@@ -9,7 +9,7 @@ export default {
     ],
   output: {
     file: 'dist/index.js',
-    format: 'umd',
-    name: 'darian',
-  }
+    format: 'cjs',
+  },
+  external: ['rx', 'react']
 }

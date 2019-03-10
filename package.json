@@ -1,6 +1,6 @@
 {
   "name": "darian",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Naive state container for JavaScript apps",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -23,10 +23,19 @@
   },
   "homepage": "https://github.com/Casper-MAGI/Darian#readme",
   "devDependencies": {
+    "@types/react": "^16.8.7",
+    "@types/rx": "^4.1.1",
     "rollup": "^1.6.0",
     "rollup-plugin-typescript2": "^0.19.3",
     "tslib": "^1.9.3",
     "tslint": "^5.13.1",
     "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "rx": "^4.1.0",
+    "rxjs": "^6.4.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.4"
   }
 }
