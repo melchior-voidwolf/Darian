@@ -3,9 +3,11 @@
   "version": "0.0.1",
   "description": "A Naive state container for JavaScript apps",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "lint": "tslint -c tslint.json 'src/*.ts' --fix",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "clean": "rm -rf dist && mkdir dist"
   },
   "repository": {
     "type": "git",
@@ -22,7 +24,7 @@
   "homepage": "https://github.com/Casper-MAGI/Darian#readme",
   "devDependencies": {
     "rollup": "^1.6.0",
-    "rollup-plugin-typescript": "^1.0.0",
+    "rollup-plugin-typescript2": "^0.19.3",
     "tslib": "^1.9.3",
     "tslint": "^5.13.1",
     "typescript": "^3.3.3333"

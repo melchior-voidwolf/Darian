@@ -62,3 +62,6 @@ typings/
 
 # rollup build output
 dist/
+
+#rpt2 cache
+.rpt2_cache/
