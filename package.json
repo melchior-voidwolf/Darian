@@ -1,6 +1,6 @@
 {
   "name": "darian",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Naive state container for JavaScript apps",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

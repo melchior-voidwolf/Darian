@@ -1,4 +1,4 @@
-import { actionT, reducerT, reduceTreeT } from "./type";
+import { actionT, reducerT } from "./type";
 
 class Store {
     public state: object;
