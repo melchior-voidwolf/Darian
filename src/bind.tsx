@@ -21,7 +21,7 @@ interface bindCfgT {
 
 export default (bindLink: bindLinkT) => (bindCfg: bindCfgT) =>(Target: React.ComponentType<any>) => {
     return class extends React.Component<any, any> {
-
+        syncLock = false
         constructor(props:any) {
             super(props)
             this.state = {
@@ -32,9 +32,11 @@ export default (bindLink: bindLinkT) => (bindCfg: bindCfgT) =>(Target: React.Com
             bindLink.stream.subscribe(this.handleChange)
         }
         componentWillUnmount() {
-            bindLink.stream.onCompleted()
+            this.syncLock = true
+            // bindLink.stream.onCompleted()
         }
         handleChange = (e: eventT) => {
+            if (this.syncLock) {return }
             if (e.event === 'DATA_UPDATE') {
                 this.setState({
                     store: bindLink.store.state
